@@ -1,0 +1,31 @@
+---
+import ExperienceItem from './ExperienceItem.astro'
+const EXPERIENCIE = [
+  {
+    date: 'Actualmente...',
+    title: 'Full Stack Developer (HA)',
+    company: 'Henry',
+    description:
+      ' Liderar, coordinar y capacitar grupos de TAs para lograr la mejor experiencia estudiantil. Desarrollar propuestas para mejorar los procesos del Bootcamp e intercambiar ideas con otros miembros del equipo.',
+    link: 'https://www.linkedin.com/in/valentinzalazar3'
+  },
+  {
+    date: 'Marzo - Junio 2023',
+    title: 'Full Stack Developer (TA)',
+    company: 'Henry',
+    description:
+      'Coordinar el grupo de estudiantes con el objetivo de lograr su adaptación al programa.  Orientar a los estudiantes en los primeros pasos de la cursada y resolver sus inquietudes. Asistir y acompañar en la resolución de ejercicios y promover la colaboración grupal (Pair Programming).',
+    link: 'https://www.linkedin.com/in/valentinzalazar3'
+  }
+]
+---
+
+<ol class='relative mt-16'>
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class=''>
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
